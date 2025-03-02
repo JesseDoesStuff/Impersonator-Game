@@ -1159,7 +1159,7 @@ export default function App() {
                             </div>
                           </TableCell>
                           <TableCell className="text-right">
-                            {entry.score * 1000}
+                            {Math.round(entry.score * 1000)}
                           </TableCell>
                         </TableRow>
                       ))}

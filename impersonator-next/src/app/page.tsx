@@ -38,11 +38,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-function getAudioUrl(name: string) {
-  const audio = audioFiles.find(entry => entry.name === name);
-  return audio ? audio.url : undefined;
-}
-
 function cosineDistance(vec1: number[], vec2: number[]): number {
   if (vec1.length !== vec2.length) {
     console.log(vec1, vec2.length);
@@ -233,7 +228,6 @@ export default function App() {
                       onClick={() => {
                         setSelectedCharacter(character)
                         console.log(character.name)
-                        console.log(getAudioUrl(character.name.toLowerCase()))
                       }
 
                       }

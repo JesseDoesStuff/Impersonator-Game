@@ -54,7 +54,7 @@ function cosineDistance(vec1: number[], vec2: number[]): number {
 
   const cosineSimilarity = dotProduct / (magnitude1 * magnitude2);
 
-  return 1 - cosineSimilarity; // Cosine distance = 1 - Cosine similarity
+  return cosineSimilarity; // Cosine distance = 1 - Cosine similarity
 }
 
 export default function App() {
